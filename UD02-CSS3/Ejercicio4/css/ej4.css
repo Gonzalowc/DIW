@@ -39,14 +39,22 @@ main{
     padding: 0 40px 0 10px;
 }
 
+
 .formulario_input:focus{
     background-color: rgb(253, 255, 161);
     color: #6783ff;
     box-shadow: 3px 8px 30px rgba(163,163,163,.4);
     border: 3px solid #0075FF
 }
-
-.formulario_input-error{
+.formulario_textarea{
+    line-height: normal;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    padding: 0 40px 0 10px;
+}
+.formulario_input-error,
+.formulario_mensaje-exito{
     font-size: 12px;
     margin-bottom: 0;
     display: none;
@@ -111,6 +119,10 @@ main{
 
 .formulario_btn:hover{
     box-shadow: 3px 8 30px rgba(163,163,163,1);
+}
+
+input:hover{
+    border: 3px dotted rgb(255, 238, 1);
 }
 
 

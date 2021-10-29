@@ -1,38 +1,42 @@
-@font-face{
-    font-family: "Zen_Antique";
-    src: url(../font/Zen_Antique/ZenAntique-Regular.ttf) format("ttf")
-}
-*{
-    font-family: "Zen_Antique";
-    font-weight:normal;
-    font-style:normal;
+@font-face {
+  font-family: "Zen_Antique";
+  src: url(../font/Zen_Antique/ZenAntique-Regular.ttf) format("ttf");
 }
 
-h1,h2{
-    font-weight: bold;
+* {
+  font-family: "Zen_Antique";
+  font-weight: normal;
+  font-style: normal;
 }
 
-a::before{
-    content: "➝";
-}
-h2::first-letter{
-    font-size: 2em;
+h1,
+h2 {
+  font-weight: bold;
 }
 
-abbr::after{
-    content: "(" attr(title) ")";
+a::before {
+  content: "➝";
+}
+h2::first-letter {
+  font-size: 2em;
 }
 
-h2 + p::first-line{
-    text-indent: 2em;
+abbr::after {
+  content: "(" attr(title) ")";
 }
 
-li:first-child{
-    background-color: rgb(253, 255, 116);
+h2 + p::first-line {
+  text-indent: 2em;
 }
-li:last-child{
-    background-color: rgb(161, 161, 161);
+
+li:first-child {
+  background-color: rgb(253, 255, 116);
 }
-li:nth-child(odd){
-    border: 1px dotted pink;
+
+li:last-child {
+  background-color: rgb(161, 161, 161);
+}
+
+li:nth-child(odd) {
+  border: 1px dotted pink;
 }
