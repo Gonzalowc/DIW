@@ -1,0 +1,54 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    
+}
+ul{
+    display: block;
+    list-style-type: none;
+    width: 100%
+}
+ul:first-child{
+    width: 50%;
+}
+
+li{
+    display: block;
+    width: 100%;
+}
+.n0{
+    text-indent: 5%;
+}
+.n1{
+    text-indent: 10%;
+}
+.n2{
+    text-indent: 15%;
+}
+.n3{
+    text-indent: 20%;
+}
+li.carpeta::before{
+    content: url("../img/carpeta.ico");
+    
+}
+li.archivo::before{
+    content: url("../img/archivo.ico");
+}
+li.carpeta{
+    display: block;
+    background-color: rgb(198, 199, 199);
+    font-weight: 600;
+}
+li.archivo{
+    display: block;
+    background-color:rgb(236, 235, 235);
+    font-weight: 500;
+}
+li.carpeta:hover{
+    background-color: rgb(188, 210, 231);
+}
+li.archivo:hover{
+    background-color: rgb(86, 127, 192);
+}

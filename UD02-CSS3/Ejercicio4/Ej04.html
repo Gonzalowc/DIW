@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="css/Ej04.css">
+    <script src="https://kit.fontawesome.com/de80e18e1a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form class="formulario" id="formulario">
+        <!-- Grupo Usuario -->
+        <div class="formulario_grupo" id="grupo_usuario">
+            <label for="usuario" class="formulario_label">Usuario</label>
+            <div class="formulario_grupo-input">
+                <input type="text" name="usuario" class="formulario_input" id="usuario" placeholder="Usuario">
+                <i class="formulario_validacion_estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario_input-error">Usuario entre 4 y 16 carácteres</p>
+        </div>
+        <!-- Grupo  Nombre-->
+        <div class="formulario_grupo" id="grupo_nombre">
+            <label for="nombre" class="formulario_label">nombre</label>
+            <div class="formulario_grupo-input">
+                <input type="text" name="nombre" class="formulario_input" id="nombre" placeholder="Nombre">
+                <i class="formulario_validacion_estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario_input-error">El nombre no puede estar vacío</p>
+        </div>
+         <!-- Grupo Apellidos -->
+         <div class="formulario_grupo" id="grupo_apellido">
+            <label for="apellido" class="formulario_label">apellido</label>
+            <div class="formulario_grupo-input">
+                <input type="text" name="apellido" class="formulario_input" id="apellido" placeholder="Apellido">
+                <i class="formulario_validacion_estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario_input-error">el apellido no puede estar vacío</p>
+        </div>
+         <!-- Grupo DNI -->
+         <div class="formulario_grupo" id="grupo_dni">
+            <label for="dni" class="formulario_label">DNI</label>
+            <div class="formulario_grupo-input">
+                <input type="text" name="dni" class="formulario_input" id="dni" placeholder="dni">
+                <i class="formulario_validacion_estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario_input-error">DNI son 10 carácteres</p>
+        </div>
+        <!-- Grupo password -->
+        <div class="formulario_grupo" id="grupo_password">
+            <label for="password" class="formulario_label">Contraseña</label>
+            <div class="formulario_grupo-input">
+                <input type="password" name="password" class="formulario_input" id="password" placeholder="Contraseña">
+                <i class="formulario_validacion_estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario_input-error">Contraseña entre 4 y 16 carácteres</p>
+        </div>
+        <!-- Grupo password Repetir-->
+        <div class="formulario_grupo" id="grupo_password2">
+            <label for="password2" class="formulario_label">Repetir</label>
+            <div class="formulario_grupo-input">
+                <input type="password2" name="password2" class="formulario_input" id="password2" placeholder="Repetir Contraseña">
+                <i class="formulario_validacion_estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario_input-error">No coincide con la anterior</p>
+        </div>
+          <!-- Grupo Fecha Nacimiento -->
+         <div class="formulario_grupo" id="grupo_nacimiento">
+            <label for="nacimiento" class="formulario_label">Fecha de Nacimiento</label>
+            <div class="formulario_grupo-input">
+                <input type="date" name="nacimiento" class="formulario_input" id="nacimiento" placeholder="nacimiento">
+                <i class="formulario_validacion_estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario_input-error">Seleccione una fecha Válida</p>
+        </div>
+        
+         <!-- Grupo Sexo -->
+         <div class="formulario_grupo" id="grupo_sexo">
+            <label for="sexo" class="formulario_label">Sexo</label>
+            <div class="formulario_grupo-radio">
+                <label for="sexo">Mujer<input type="radio" name="sexo" value="mujer" class="formulario_radio" selected="selected"></label><br/>
+                <label for="sexo"></label>Hombre<input type="radio" name="sexo" value="hombre" class="formulario_radio" ></label>
+            </div>
+        </div>
+         <!-- Grupo Descripcion -->
+         <div class="formulario_grupo" id="grupo_descripcion">
+            <label for="descripcion" class="formulario_label">Fecha de descripcion</label>
+            <div class="formulario_grupo-textarea">
+                <textarea rows="5" cols="85" type="date" name="descripcion" class="formulario_textarea" id="descripcion" placeholder="nacimiento">Escribe un comentario </textarea>
+            </div>
+        </div>
+        <!-- Grupo condiciones -->
+        <div class="formulario_grupo" id="grupo_condiciones">
+            <label for="condiciones" class="formulario_checkbox">
+                <input type="checkbox" name="condiciones" class="formulario_checkbox" id="condiciones" placeholder="condiciones">
+                Acepto los <a href="https://www.google.com">Terminos y Condiciones</a>
+            </label>
+        </div>
+    <!-- Mensaje Error -->
+        <div class="formulario_mensaje" id="formulario_mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b>Por favor rellena el formulario correctamente</p> 
+        </div>
+    </form>
+    <!-- Mensaje Exito -->
+        <div class="formulario_grupo formulario_btn-enviar">
+            <button type="submit" class="formulario_btn">Enviar</button>
+            <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formulario enviado correctamente</p>
+        </div>
+</body>
+</html>
