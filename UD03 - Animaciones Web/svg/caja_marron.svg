@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg>
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" height="50" width="50">
+      <rect width="46" height="46" x="2" y="2" fill="maroon" stroke="rgb(32, 44, 30)" stroke-width="0" />
+      <rect width="22" height="13" x="1" y="2" rx="3" ry="2" fill="rgb(136, 63, 2)" stroke="rgb(224, 125, 32)" stroke-width="2" />
+      <rect width="23" height="13" x="26" y="2" rx="3" ry="2" fill="rgb(136, 63, 2)" stroke="rgb(224, 125, 32)" stroke-width="2" />
+      
+      <rect width="15" height="15" x="1" y="18" rx="3" ry="2" fill="rgb(136, 63, 2)" stroke="rgb(224, 125, 32)" stroke-width="2" />
+      <rect width="10" height="15" x="19" y="18" rx="3" ry="2" fill="rgb(136, 63, 2)" stroke="rgb(224, 125, 32)" stroke-width="2" />
+      <rect width="17" height="15" x="32" y="18" rx="3" ry="2" fill="rgb(136, 63, 2)" stroke="rgb(224, 125, 32)" stroke-width="2" />
+
+      <rect width="26" height="13" x="1" y="36" rx="3" ry="2" fill="rgb(136, 63, 2)" stroke="rgb(224, 125, 32)" stroke-width="2" />
+      <rect width="19" height="13" x="30" y="36" rx="3" ry="2" fill="rgb(136, 63, 2)" stroke="rgb(224, 125, 32)" stroke-width="2" />
+</svg>

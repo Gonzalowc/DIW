@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg>
+<!-- stroke="black" stroke-width="3" fill="white" -->
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" height="250" width="250">
+    <defs>
+        <linearGradient id="degradadoVerde" x1="0%" y1="100%" x2="60%" y2="100%" x3="95%" y3="95%">
+          <stop offset="0%" stop-color="rgb(51, 110, 44)" stop-opacity="1"/>
+          <stop offset="60%" stop-color="rgb(32, 44, 30)" stop-opacity="1"/>
+          <stop offset="100%" stop-color="rgb(90, 196, 75)" stop-opacity="1"/>
+        </linearGradient>
+      </defs>
+      <rect width="200" height="200" x="25" y="50" fill="url(#degradadoVerde)" stroke="rgb(32, 44, 30)" stroke-width="1" />
+    <rect width="250" rx="5" ry="15" height="50" fill="url(#degradadoVerde)" stroke="rgb(32, 44, 30)" stroke-width="3"/>
+</svg>

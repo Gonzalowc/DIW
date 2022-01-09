@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg>
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" height="700" width="150" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient id="degradadoVerde" x1="0%" y1="100%" x2="60%" y2="100%" x3="95%" y3="95%">
+            <stop offset="0%" stop-color="rgb(32, 44, 30)" stop-opacity="1"/>
+            <stop offset="60%" stop-color="rgb(90, 196, 75)" stop-opacity="1"/>
+            <stop offset="100%" stop-color="rgb(32, 44, 30)" stop-opacity="1"/>
+        </linearGradient>
+        <linearGradient id="bola" x1="0%" y1="50%" x2="30%" y2="25%" x3="85%" y3="95%">
+            <stop offset="0%" stop-color="rgb(32, 44, 30)" stop-opacity="1"/>
+            <stop offset="60%" stop-color="rgb(90, 196, 75)" stop-opacity="1"/>
+            <stop offset="100%" stop-color="rgb(32, 44, 30)" stop-opacity="1"/>
+        </linearGradient>
+    </defs>
+    <!-- <rect width="150" height="700" x="0" y="0" fill="black" stroke="rgb(32, 44, 30)" stroke-width="0" /> -->
+    <circle cx="110" cy="16" r="15" stroke="black" stroke-width="3" fill="#bola" />
+    <rect width="20" height="700" x="100" y="29" fill="url(#degradadoVerde)" stroke="rgb(32, 44, 30)" stroke-width="0" />
+    <path fill="red" d="M0 30 L100 30 L100 120 Z" stroke="black" stroke-width="3"/>
+    <image id="yourSVGImage" xlink:href="seta.svg" 
+     x="50px" y="30px" width="40px" height="55px" 
+      preserveAspectRatio="XMinYMin meet"/>
+      <image id="yourSVGImage" xlink:href="caja_marron.svg" 
+     x="75px" y="630px" width="70px" height="70px" 
+      preserveAspectRatio="XMinYMin meet"/>
+</svg>
