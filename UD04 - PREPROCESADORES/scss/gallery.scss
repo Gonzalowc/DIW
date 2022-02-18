@@ -1,0 +1,45 @@
+$MAX_COLUMNS: 4 !default;
+$RESPONSIVE_COLUMNS: (1024px: 3, 768px: 2, 480px: 1);
+
+////
+/// @author Gonzalo WC 
+////
+
+/// Distribuye el ancho de la columna según el numero
+/// @param {number} $n - Numero de columnas
+@function grid_columns($n) {
+    @if ($n > 0) {
+        @return (100% / $n);
+    } 
+    @else {
+        @return (100% / $MAX_COLUMNS); 
+    }
+}
+/// Modifica el tamaño de la imagen segun el numero de columnas
+/// @param {number} $n - number of columns
+@mixin resize($n) {
+    .gallery img {
+        width: grid_columns($n);
+    }
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.gallery {
+    display: flex;
+    background-color: #000;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+}
+
+@include resize(4);
+@each $size, $value in $RESPONSIVE_COLUMNS {
+    @media screen and (max-width: $size){
+        @include resize($value);
+    }
+}

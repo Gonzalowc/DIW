@@ -1,0 +1,33 @@
+{
+  "name": "sass_component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run css && webpack --config webpack.prod.js && npm run gen-sassdoc",
+    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 assets/src/scss -o assets/dist/css/",
+    "css-prefix": "postcss --replace assets/dist/css/style.css --use autoprefixer --map",
+    "css": "npm run css-compile && npm run css-prefix",
+    "watch": "nodemon -e scss -x  \"npm run css && webpack --config webpack.dev.js\"",
+    "scss": "node-sass --watch ./scss/ -o ./css/",
+    "set-theme": "sassdoc ./mydocs/ -c ./package.json",
+    "gen-sassdoc": "npm run set-theme && sassdoc ./scss/* -d ./mydocs/ --theme herman"
+  },
+  "author": "Gonzalo Waack Carneado",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "autoprefixer": "^10.2.5",
+    "bootstrap": "^5.0.1",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.7",
+    "nunjucks": "^3.2.3",
+    "postcss-cli": "^8.3.1",
+    "sassdoc": "^2.7.3",
+    "sassdoc-theme-herman": "^4.0.2",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-merge": "^5.7.3"
+  }
+}

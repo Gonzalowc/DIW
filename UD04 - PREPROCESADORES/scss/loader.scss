@@ -1,0 +1,86 @@
+$duration: 10s !global;
+$colorNumero: yellow;
+$borderLoader: 2px solid transparent;
+$b-loader: transparent;
+$b-carga: red;
+$alturaLoader: 50px;
+$size-Numero: 35pt;
+
+////
+/// @author Gonzalo WC 
+////
+
+/// Da un border y el color de letra
+/// @param {color} $color - color de letra
+/// @param {border} $border - size-type-color
+@mixin colorAndBorder($color, $border){
+  color: $color;
+  border: $border;
+}
+/// Elimina los estilos propios
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/// Resetea la posición de un elemento
+@mixin reset-load {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+}
+/// 
+/// Genera el ancho y el alto
+/// @param {number} $width [100%] - ancho
+/// @param {number} $height [50px] - alto
+/// 
+@mixin size($width: 100%, $height: 50px) {
+  width: $width;
+  height: $height;
+}
+* {
+  @include reset;
+}
+.loader{
+  display: block;
+  position: relative;
+  background: $b-loader;
+  @include colorAndBorder(null, $borderLoader);
+  @include size($height: $alturaLoader); 
+  
+  &::before {
+    background-color: $b-carga;
+    @include reset-load;
+    @include size($height: 100%);
+    animation: load $duration linear infinite;
+  }
+
+  &::after {
+    @include colorAndBorder($colorNumero, null);
+    font-size: $size-Numero;
+    @include reset-load;
+    @include size(100%,100%);
+    animation: text_load $duration linear infinite;
+    -webkit-animation: text_load $duration linear infinite;
+  }
+}
+// Keyframe que expande el width de 0 a 100
+@keyframes load {
+  0% { width: 0%; }
+  100% { width: 100%; }
+} 
+// Keyframe que genera los textos del 0 al 100 de 10 en 10
+@keyframes text_load {
+  0%{ content: "0%"}
+  10%{ content: "10%"}
+  20%{ content: "20%"}
+  30%{ content: "30%"}
+  40%{ content: "40%"}
+  50%{ content: "50%"}
+  60%{ content: "60%"}
+  70%{ content: "70%"}
+  80%{ content: "80%"}
+  90%{ content: "90%"}
+  100%{ content: "100%"}
+}
